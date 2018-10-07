@@ -44,6 +44,9 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 
 });
 
+/////////////////////////////////////////////////
+// when btn hold is clicked
+/////////////////////////////////////////////////
 document.querySelector('.btn-hold').addEventListener('click', function () {
     if (gamePlaying) {
         // Add current score to global score
@@ -70,7 +73,9 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
 
 })
 
-
+/////////////////////////////////////////////////
+// when its the next players turn
+/////////////////////////////////////////////////
 function nextPlayer() {
     //Next player
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
@@ -91,7 +96,9 @@ function nextPlayer() {
 // when new game is clicked, call init function to restart game
 document.querySelector('.btn-new').addEventListener('click', init);
 
-
+/////////////////////////////////////////////////
+// start game
+/////////////////////////////////////////////////
 function init() {
     // sets all scores to 0
     scores = [0, 0];
